@@ -1,6 +1,6 @@
 {
   "name": "gatsby-static-page",
-  "private": true,
+  "private": false,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Leonardo Telles <leo.c.telles@gmail.com>",
