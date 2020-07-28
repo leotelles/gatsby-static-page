@@ -6,3 +6,6 @@ export const Container = styled.div`
   align-items: left;
   justify-content: left;
 `
+export const RightContainer = styled.div`
+  margin-left: 25px;
+`
