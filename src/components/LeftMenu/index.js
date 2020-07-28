@@ -8,6 +8,8 @@ import Divider from "@material-ui/core/Divider"
 import InboxIcon from "@material-ui/icons/Inbox"
 import DraftsIcon from "@material-ui/icons/Drafts"
 
+import { Link } from "gatsby"
+
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
@@ -27,16 +29,25 @@ export default function LeftMenu() {
   return (
     <div className={classes.root}>
       <List component="nav" aria-label="main mailbox folders">
-        <ListItem
-          button
-          selected={selectedIndex === 0}
-          onClick={event => handleListItemClick(event, 0)}
+        <Link
+          to="/page-2/"
+          style={{
+            textDecoration: "none",
+            color: "rebeccapurple",
+          }}
         >
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
-        </ListItem>
+          <ListItem
+            button
+            selected={selectedIndex === 0}
+            onClick={event => handleListItemClick(event, 0)}
+          >
+            <ListItemIcon>
+              <InboxIcon />
+            </ListItemIcon>
+            <ListItemText primary="Page 2" />
+          </ListItem>
+        </Link>
+
         <ListItem
           button
           selected={selectedIndex === 1}
