@@ -7,7 +7,7 @@ import ListItemText from "@material-ui/core/ListItemText"
 import InboxIcon from "@material-ui/icons/Inbox"
 import { purple } from "@material-ui/core/colors"
 
-function MenuItem() {
+function MenuItem({ page, title }) {
   const [selectedIndex, setSelectedIndex] = React.useState(1)
 
   const handleListItemClick = (event, index) => {
@@ -16,7 +16,7 @@ function MenuItem() {
 
   return (
     <Link
-      to="/page-2/"
+      to={`/${page}/`}
       style={{
         textDecoration: "none",
         color: "#6a1b9a",
@@ -30,7 +30,7 @@ function MenuItem() {
         <ListItemIcon>
           <InboxIcon style={{ color: purple[800] }} />
         </ListItemIcon>
-        <ListItemText primary="Page 2" />
+        <ListItemText primary={title} />
       </ListItem>
     </Link>
   )

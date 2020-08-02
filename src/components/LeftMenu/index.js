@@ -9,6 +9,8 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
+    marginLeft: 0,
+    marginRight: "auto",
   },
 }))
 
@@ -18,8 +20,8 @@ export default function LeftMenu() {
   return (
     <div className={classes.root}>
       <List component="nav" aria-label="main mailbox folders">
-        <MenuItem />
-        <MenuItem />
+        <MenuItem page="page-2" title="Page 2" />
+        <MenuItem page="page-3" title="Page 3" />
       </List>
     </div>
   )
