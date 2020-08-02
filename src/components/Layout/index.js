@@ -14,15 +14,18 @@ const Layout = ({ children }) => {
     flex-wrap: wrap;
     align-items: left;
     justify-content: left;
+    height: 490px;
   `
   const RightContainer = styled.div`
-    padding: 0;
-    margin-left: 0;
-    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin: 0;
+    width: calc(100% - 260px);
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: left;
+    background: #ce93d8;
   `
 
   const data = useStaticQuery(graphql`

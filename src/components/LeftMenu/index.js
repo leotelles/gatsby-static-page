@@ -7,10 +7,10 @@ import MenuItem from "./components/MenuItem"
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
-    maxWidth: 360,
-    backgroundColor: theme.palette.background.paper,
+    maxWidth: 260,
     marginLeft: 0,
     marginRight: "auto",
+    backgroundColor: "#f3e5f5",
   },
 }))
 

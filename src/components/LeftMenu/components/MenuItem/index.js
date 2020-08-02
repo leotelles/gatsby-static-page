@@ -26,6 +26,7 @@ function MenuItem({ page, title }) {
         button
         selected={selectedIndex === 0}
         onClick={event => handleListItemClick(event, 0)}
+        style={{ backgroundColor: purple[50] }}
       >
         <ListItemIcon>
           <InboxIcon style={{ color: purple[800] }} />

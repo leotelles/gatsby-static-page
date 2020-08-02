@@ -7,15 +7,18 @@ const Footer = () => {
         marginLeft: "0",
         marginRight: "auto",
         width: "100%",
-        padding: `0 1.0875rem 1.45rem`,
+        padding: "0",
         bottom: "0",
         position: "absolute",
+        height: "40px",
       }}
     >
-      <footer style={{ color: "#6a1b9a" }}>
+      <footer style={{ color: "#FFF", background: "#6a1b9a" }}>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org" style={{ color: "#FFF" }}>
+          Gatsby
+        </a>
       </footer>
     </div>
   )
