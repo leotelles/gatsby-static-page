@@ -16,8 +16,13 @@ const Layout = ({ children }) => {
     justify-content: left;
   `
   const RightContainer = styled.div`
-    margin-right: 0px;
-    margin-left: auto;
+    padding: 0;
+    margin-left: 0;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
   `
 
   const data = useStaticQuery(graphql`
