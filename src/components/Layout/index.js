@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
     padding-top: 20px;
     padding-left: 30px;
     margin: 0;
+    min-width: 300px;
     width: calc(100% - 260px);
     display: flex;
     flex-direction: column;
