@@ -8,25 +8,38 @@ import LeftMenu from "../LeftMenu"
 import Footer from "../Footer"
 
 const Layout = ({ children }) => {
-  const Container = styled.div`
+  const Wrapper = styled.div`
+    background-color: #f3e5f5;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: left;
-    justify-content: left;
-    height: 490px;
   `
-  const RightContainer = styled.div`
-    padding-top: 20px;
-    padding-left: 30px;
-    margin: 0;
-    min-width: 300px;
-    width: calc(100% - 260px);
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    background: #ce93d8;
+  const FooterDiv = styled.div`
+    background-color: #6a1b9a;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+  `
+
+  const LeftDiv = styled.div`
+    background-color: #e1bee7;
+    width: 256px;
+    min-width: 260px;
+    min-height: 100vh;
+    float: left;
+    display: none;
+
+    @media screen and (min-width: 700px) {
+      display: block;
+    }
+  `
+
+  const RightDiv = styled.div`
+    background-color: #f3e5f5;
+    min-height: 100vh;
+    width: 100%;
   `
 
   const data = useStaticQuery(graphql`
@@ -42,11 +55,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Container>
-        <LeftMenu />
-        <RightContainer>{children}</RightContainer>
-      </Container>
-      <Footer />
+      <Wrapper>
+        <LeftDiv>
+          <LeftMenu />
+        </LeftDiv>
+        <RightDiv>{children}</RightDiv>
+      </Wrapper>
+      <FooterDiv>
+        <Footer />
+      </FooterDiv>
     </>
   )
 }

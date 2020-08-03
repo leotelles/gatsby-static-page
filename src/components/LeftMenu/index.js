@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 260,
     marginLeft: 0,
     marginRight: "auto",
-    backgroundColor: "#f3e5f5",
+    backgroundColor: "#e1bee7",
   },
 }))
 
