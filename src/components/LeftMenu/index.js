@@ -20,9 +20,9 @@ export default function LeftMenu() {
   return (
     <div className={classes.root}>
       <List component="nav" aria-label="main mailbox folders">
-        <MenuItem page="page-2" title="Page 2" />
-        <MenuItem page="page-3" title="Page 3" />
-        <MenuItem page="page-4" title="Page 4" />
+        <MenuItem page="roupas" title="Roupas" />
+        <MenuItem page="carros" title="Carros" />
+        <MenuItem page="restaurantes" title="Restaurantes" />
       </List>
     </div>
   )
